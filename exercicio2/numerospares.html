@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var minInter = parseInt(prompt('Digite o valor mínimo do intervalo'));
+        var maxInter = parseInt(prompt('Digite o valor máximo do intervalo'));        
+        
+        while (minInter <= maxInter) {
+            var mod = minInter%2;
+            if (mod == 0){
+                console.log(minInter);
+            }
+            minInter++;
+        } 
+        console.log('Fim');
+
+    </script>
+</body>
+</html>
