@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Funcionários Acme Corporation </title>
+</head>
+<body>
+    <h1 style="text-align: center; color: navy;">CADASTRO DE FUNCIONÁRIOS</h1>
+
+    <form name="formCadastro" action="cadastroFuncExercicioLivro01" method="POST">
+        <label for="txtNome">Nome:</label>
+        <input name="txtNome" type="text" size="50" maxlength="60" style="margin-right: 20px;"/>
+
+        <label for="numCpf">CPF:</label>
+        <input name="numCpf" type="text" size="15" maxlength="11" pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}" style="margin-right: 20px;"/>
+        
+        <label for="dtNascimento">Data de Nascimento:</label>
+        <input name="dtNascimento" type="date" />
+        <br/> <br/>
+
+        <label for="txtEndereco">Endereço:</label>
+        <input name="txtEndereco" type="text" size="80" maxlength="100"  />
+
+        <label for="numcep">CEP:</label>
+        <input name="numcep" type="text" size="6" maxlength="8" pattern="\d{2}\.?\d{3}-?\d{3}"  />
+
+        <label for="txtEmail">e-Mail:</label>
+        <input name="txtEmail" type="email" size="20" maxlength="40" />
+        
+        <label for="txtTelefone">Telefone:</label>
+        <input name="txtTelefone" type="text" size="20" maxlength="13" />
+        <br/>
+        
+        <h3 style="color: navy; margin-bottom: 0%;">Selecione os conhecimentos existentes: </h3>
+        <input name="chkSetor" type="checkbox" value="Informática Básica"> Informática Básica <br/>
+        <input name="chkSetor" type="checkbox" value="Editor de texto"> Editor de texto <br/>
+        <input name="chkSetor" type="checkbox" value="Editor de planilhas"> Editor de planilhas <br/>
+        <input name="chkSetor" type="checkbox" value="Desenvolvimento Web"> Desenvolvimento Web <br/>
+        <input name="chkSetor" type="checkbox" value="Banco de dados"> Banco de dados <br/>
+        <input name="chkSetor" type="checkbox" value="Computação em Nuvem"> Computação em Nuvem <br/>
+        <br/>
+
+        <h3 style="color: navy; margin-bottom: 0%; margin-top: 5px;">Selecione o nível do empregado: </h3>
+        <input name="rdbDia" type="radio" value="1"> Estagiário <br/>
+        <input name="rdbDia" type="radio" value="2"> Trainee <br/>
+        <input name="rdbDia" type="radio" value="3"> Operacional <br/>
+        <input name="rdbDia" type="radio" value="4"> Especialista <br/>
+        <input name="rdbDia" type="radio" value="5"> Supervisão <br/>
+        <input name="rdbDia" type="radio" value="6"> Gerencial <br/>
+        <br/>
+
+        <h3 style="color: navy; margin-bottom: 5px; margin-top: 5px;">Selecione a unidade onde o empregado ficará lotado: </h3>
+        <select name="unidade" style="margin-bottom: 20px; margin-left: 5px; alt: initial;"  >
+            <option value="01">Alemanha</option>
+            <option value="02">Brasil</option>
+            <option value="03">Canadá</option>
+            <option value="04">Dinamarca</option>
+            <option value="05">Estonia</option>
+        </select>
+        <br/>
+
+        <table border="1" style="color: navy; background-color: paleturquoise;" >
+            <tr >
+                <th style="width: 100px;">Horário</th>
+                <th style="width: 80px;">Segunda</th>
+                <th style="width: 80px;">Terça</th>
+                <th style="width: 80px;">Quarta</th>
+                <th style="width: 80px;">Quinta</th>
+                <th style="width: 80px;">Sexta</th>
+                <th style="width: 80px;">Sábado</th>
+            </tr>
+            <tr style="text-align: center;"><td>08h às 12h</td><td>X</td><td></td><td>X</td><td></td><td>X</td><td></td></tr>
+            <tr style="text-align: center;"><td>13h às 17h</td><td></td><td>X</td><td></td><td>X</td><td></td><td>X</td></tr>
+            <tr style="text-align: center;"><td>18h às 22h</td><td>X</td><td></td><td>X</td><td></td><td>X</td><td></td></tr>
+            <tr style="text-align: center;"><td>23h às 03h</td><td></td><td>X</td><td></td><td>X</td><td></td><td>X</td></tr>
+            <tr style="text-align: center;"><td>04h às 08h</td><td></td><td>X</td><td></td><td>X</td><td></td><td>X</td></tr>
+        </table>
+        <br/><br/>
+
+        <h3 style="color: navy; margin-bottom: 0%; margin-top: 5px;">Site para cadastro de currículo: </h3>
+        <ul style="margin-top: 0%;">
+            <li> <a accesskey="c" href="https://www.catho.com.br/" target="_blank">Catho online</a></li>
+            <li> <a accesskey="d" href="https://www.indeed.com.br/" target="_blank" >inDeed</a></li>
+            <li> <a accesskey="f" href="https://www.infojobs.com.br/" target="_blank" >inFojobs</a></li>
+            <li> <a accesskey="v" href="https://www.vagas.com.br/" target="_blank">Vagas</a></li>
+        </ul>
+
+        <label for="txtUser">Usuário: </label>
+        <input name="txtUser" type="text" size="20" maxlength="30" />
+
+        <label for="txtSenha">Senha: </label>
+        <input name="txtSenha" type="password" size="20" maxlength="30" />
+        <br/> <br/>
+
+        <input name="btnLimpar" type="reset" value="limpar campos" style="font-weight:bold; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: darkred; color: pink; margin-left: 60%;" />
+        <input name="btnSalvar" type="submit" value="salvar" style="font-weight: bold; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: darkslategray; color: lime; margin-bottom: 20px;"/>
+        <br/>
+    </form>
+    
+</body>
+</html>

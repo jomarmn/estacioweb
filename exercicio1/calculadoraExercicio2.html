@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <script>
+        var number1 = parseFloat(prompt("Digite o primeiro numero:"));
+        
+        var number2 = parseFloat(prompt("Digite o segundo numero:"));
+     
+        var operacao = prompt("Digite qual operacao deseja realizar:");
+
+               
+        function soma(number1, number2){
+           var total = number1 + number2;
+           return total;
+       }
+
+       function subtracao(number1, number2){
+           var total = number1 - number2;
+           return total;
+       }
+
+       function multiplicacao(number1, number2){
+           var total = number1 * number2;
+           return total;
+       }
+
+       function divisao(number1, number2){
+           var total = number1 / number2;
+           return total;
+       }
+
+       switch (operacao) {
+           case 'soma':
+                window.alert(soma(number1,number2));
+                break;
+           case 'subtracao': 
+                window.alert(subtracao(number1,number2));
+                break;
+            case 'multiplicacao':
+                window.alert(multiplicacao(number1,number2));
+                break;
+            case 'divisao':
+                window.alert(divisao(number1,number2));
+                break;
+            default:
+                window.alert('Voce nao selecionou uma opção válida! Por favor, repita a operação e selecione soma, subtracao, multiplicacao ou divisao.');  
+       }
+
+    </script>
+    <a href="index.html">Voltar</a>
+</body>
+</html>
