@@ -8,12 +8,13 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="aula4.php">
-        Nome: <input type="text" name="nome" /><br>
-        Idade: <input type="text" name="idade" /><br>
-        <input type="submit" value="Enviar" />
-    </form>
-    <br>
-    <br>
+<form method="post" action="aula6.php">
+    Nome: <input type="text" name="nome" /><br>
+    E-mail: <input type="email" name="email" /><br>
+    Idade: <input type="text" name="idade" /><br>
+    <input type="submit" value="Enviar" />
+</form>
+<br>
+<br>
 </body>
 </html>

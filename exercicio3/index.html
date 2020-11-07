@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário Web: Exemplo 01</title>
+</head>
+<body>
+    <h1>Cadastro de Clientes</h1>
+
+    <form action="cadastro.html" method="POST">
+    <!-- CONTROLES DO FORMULÁRIO-->
+        <label for="txtNome">Nome: </label>
+        <input type="text" name="txtNome" size="50" maxlength="60" />
+        <br/><br/>
+
+        <label for="txtEndereco">Endereço: </label>
+        <input type="text" name="txtEndereco" size="50" maxlength="100" />
+        <br/><br/>
+
+        <label for="txtCidade">Cidade: </label>
+        <input type="text" name="txtCidade" size="40" maxlength="60" />
+        <br/><br/>
+
+        <label for="txtTelefone">Telefone: </label>
+        <input type="text" name="txtTelefone" size="20" maxlength="20" />
+        <br/> <br/>
+
+        <input type="submit" value="enviar" />
+        <input name="btnLimpar" type="reset" value="limpar campos" />
+
+    </form>
+</body>
+</html>
