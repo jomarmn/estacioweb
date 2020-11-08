@@ -1,12 +1,19 @@
 <?php
 
-    $nome = $_GET["nome"];
-    $salario = $_GET["salario"];
-    $percentual = $_GET["percentual"];
+    $material = $_GET["material"];
+    $massa = $_GET["massa"];
+    $perda = $_GET["perda"];
+    $tempo = $_GET["tempo"];
+    $contTempo = 0;
 
-    $aumento = ($salario * ($percentual/100));
-    $novosalario = $salario + $aumento;
 
+    while ($massa >= 0.10) {
+        $massa = $massa - ($massa*($perda/100));
+        $contTempo = $contTempo + $tempo;
+    }
+    
+    print("São necessários ".$contTempo." segundos para que a massa do ".$material." seja menor que 0.10.");
+    
 ?>
 
 <!DOCTYPE html>
@@ -28,25 +35,32 @@
 <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
   <div class="card-header">Header</div>
   <div class="card-body">
-    <h5 class="card-title">Salário</h5>
-    <p class="card-text">Salário: <?php print $salario ?></p>   
+    <h5 class="card-title">Material Radioativo</h5>
+    <p class="card-text">Material: <?php print $material ?></p>   
   </div>
 </div>
 
 <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
   <div class="card-header">Header</div>
   <div class="card-body">
-    <h5 class="card-title">% Aumento</h5>
-    <p class="card-text">% <?php print $percentual ?></p>
-    <p class="card-text">Valor Aumento:  <?php print $aumento ?></p>
+    <h5 class="card-title">Massa</h5>
+    <p class="card-text">Massa:  <?php print $massa ?></p>
   </div>
 </div>
 
 <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
   <div class="card-header">Header</div>
   <div class="card-body">
-    <h5 class="card-title">Novo Salário</h5>
-    <p class="card-text">Novo Salário: <?php print $novosalario ?></p>    
+    <h5 class="card-title">Perda</h5>
+    <p class="card-text">Perda: <?php print $perda ?></p>    
+  </div>
+</div>
+
+<div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+  <div class="card-header">Header</div>
+  <div class="card-body">
+    <h5 class="card-title">Tempo</h5>
+    <p class="card-text">Tempo: <?php print $tempo ?></p>    
   </div>
 </div>
 

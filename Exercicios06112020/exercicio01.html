@@ -3,15 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Exercicio 01</title>
 </head>
 <body>
-    <form method="GET" action="exercicio01.php">
-        nome = <input type="text" name="nome" /> </br>
-        salario: <input type="number" name="salario" /> </br>
-        percentual: <input type="number" name="percentual" /> </br>
-
-        <input type="submit" value="Enviar" />
-    </form>
+    <div class="container">
+        
+        <h2>Calcular Aumento de Salario</h2>
+        
+        <form method="GET" action="exercicio01.php">
+            <div class="form-group">
+                <label for="nome"> Nome </label>
+                <input type="text" name="nome" class="form-control" id="nome" aria-describedby="nomeSmall" placeholder="Informar nome">
+                <small id="nomeSmall" class="form-text text-muted">Informar nome</small>
+            </div>
+            <div class="form-group">
+                <label for="salario"> Salário </label>
+                <input type="number" name="salario" class="form-control" id="salario" aria-describedby="salarioSmall" placeholder="Informar salário">
+                <small id="salarioSmall" class="form-text text-muted">Informar salário</small>
+            </div>
+            <div class="form-group">
+                <label for="nome"> Percentual </label>
+                <input type="number" name="percentual" class="form-control" id="percentual" aria-describedby="percentualSmall" placeholder="Informar percentual">
+                <small id="percentualSmall" class="form-text text-muted">Informar percentual</small>
+            </div>
+            <button type="submit" class="btn btn-primary">Calcular</button>
+        </form>
+    </div>
 </body>
 </html>

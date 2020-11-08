@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Exercicio 14</title>
+</head>
+<body>
+    <div class="container">
+        
+        <h2>Calcular a perda de massa de um material radioativo</h2>
+        
+        <form method="GET" action="exercicio14.php">
+            <div class="form-group">
+                <label for="nome"> Material radioativo </label>
+                <input type="text" name="material" class="form-control" id="material" aria-describedby="materialSmall" placeholder="Informar material radioativo">
+                <small id="materialSmall" class="form-text text-muted">Informar material radioativo</small>
+            </div>
+            <div class="form-group">
+                <label for="massa"> Massa </label>
+                <input type="number" name="massa" class="form-control" id="massa" aria-describedby="massaSmall" placeholder="Informar massa">
+                <small id="massaSmall" class="form-text text-muted">Informar massa</small>
+            </div>
+            <div class="form-group">
+                <label for="salario"> Perda </label>
+                <input type="number" name="perda" class="form-control" id="perda" aria-describedby="perdaSmall" placeholder="Informar perda">
+                <small id="perdaSmall" class="form-text text-muted">Informar perda</small>
+            </div>
+            <div class="form-group">
+                <label for="nome"> Tempo </label>
+                <input type="number" name="tempo" class="form-control" id="tempo" aria-describedby="tempoSmall" placeholder="Informar tempo">
+                <small id="tempoSmall" class="form-text text-muted">Informar tempo</small>
+            </div>
+            <button type="submit" class="btn btn-primary">Calcular</button>
+        </form>
+    </div>
+</body>
+</html>
